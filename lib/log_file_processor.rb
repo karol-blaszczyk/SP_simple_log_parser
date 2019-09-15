@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
 # Analyze log from file line by line
 # This class responsibility is to iterate over each line of provided log file
 class LogFileProcessor

@@ -49,7 +49,7 @@ RSpec.describe LogFileProcessor do
         expect(line_parser).to receive(:call).with(log_line2).ordered.and_return(parsed_log_line2)
         expect(store).to receive(:call).with(parsed_log_line2).ordered
 
-        # If nil, log line is not emited to the store
+        # If nil, log line is not emittedemited to the store
         expect(line_parser).to receive(:call).with(log_line3).ordered.and_return(parsed_log_line3)
         expect(store).not_to receive(:call).with(parsed_log_line3)
 
